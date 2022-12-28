@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TodoListActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/todolistnametextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TodolistName"
+            android:gravity="center"
+            android:textSize="30sp"
+
+            android:textColor="@color/teal_200"/>
+        <ListView
+            android:id="@+id/listviewtodos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="15sp"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/addTodoButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="+"
+        android:background="@drawable/circule_background"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:backgroundTint="@color/teal_200"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"/>
+</RelativeLayout>

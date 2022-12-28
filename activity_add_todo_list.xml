@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addTodoListActivity">
+
+    <EditText
+        android:id="@+id/TodoListNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_200"
+        android:hint="Name of TodoList"
+        android:inputType="textMultiLine"
+        android:textColor="#673AB7"
+        android:textColorHint="@color/teal_200"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="282dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.38"></EditText>
+
+    <Button
+        android:id="@+id/confirm_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_200"
+        android:text="Add"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editer_absoluteX="128dp"
+        tools:layout_editer_absoluteY="181dp"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="387dp"></Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
